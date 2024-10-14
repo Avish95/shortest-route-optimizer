@@ -1,4 +1,5 @@
-// CalculatorInputs.spec.ts
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
 import CalculatorInputs from '../CalcInputs.vue'
@@ -6,11 +7,8 @@ import CalculatorInputs from '../CalcInputs.vue'
 describe('CalculatorInputs.vue', () => {
   it('renders correctly and has initial states', () => {
     const wrapper = mount(CalculatorInputs)
-
-    // Check if the component renders
     expect(wrapper.exists()).toBe(true)
 
-    // Check initial state of inputs
     expect(wrapper.vm.userInput.fromnode).toBe('')
     expect(wrapper.vm.userInput.tonode).toBe('')
     expect(wrapper.vm.validationErrors.isFromInValid).toBe(false)
@@ -33,7 +31,7 @@ describe('CalculatorInputs.vue', () => {
   it('validates input fields correctly', async () => {
     const wrapper = mount(CalculatorInputs)
     wrapper.vm.userInput.fromnode = 'A'
-    wrapper.vm.userInput.tonode = 'A' 
+    wrapper.vm.userInput.tonode = 'A'
     wrapper.vm.handleCalculator()
 
     expect(wrapper.vm.validationErrors.isFromInValid).toBe(true)

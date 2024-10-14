@@ -1,7 +1,8 @@
-// SelectComponent.spec.ts
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
-import SelectComponent from '../SelectBase.vue' 
+import SelectComponent from '../SelectBase.vue'
 import { nextTick } from 'vue'
 
 describe('SelectComponent.vue', () => {
@@ -22,7 +23,7 @@ describe('SelectComponent.vue', () => {
     })
 
     expect(wrapper.find('label').text()).toBe('Test Label')
-    expect(wrapper.findAll('option')).toHaveLength(3) 
+    expect(wrapper.findAll('option')).toHaveLength(3)
   })
 
   it('renders invalid message when invalid prop is true', () => {
@@ -70,16 +71,16 @@ describe('SelectComponent.vue', () => {
         id: 'test-select',
         label: 'Test Label',
         options,
-        value: 'A', // Initially selected option
+        value: 'A', 
         invalid: false,
       },
     })
 
     const selectElement = wrapper.find('select')
-    await selectElement.setValue('B') 
-    await nextTick() 
+    await selectElement.setValue('B')
+    await nextTick()
 
     expect(wrapper.emitted()['update:value'][0]).toEqual(['B'])
-    expect(selectElement.element.value).toBe('B') 
+    expect(selectElement.element.value).toBe('B')
   })
 })

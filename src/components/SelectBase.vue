@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import Option from '@/types/selectOption';
+import type Option from '@/types/selectOption';
 
 interface Props {
     id: string;

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 import { describe, it, expect } from 'vitest'
 import getRandomNodes from './randomNodes'
 
@@ -16,14 +18,14 @@ describe('getRandomNodes', () => {
     const nodes = ['A', 'B', 'C']
     const result = getRandomNodes(nodes, 5)
 
-    expect(result.length).toBe(3) 
+    expect(result.length).toBe(3)
   })
 
   it('handles cases when count is zero', () => {
     const nodes = ['A', 'B', 'C']
     const result = getRandomNodes(nodes, 0)
 
-    expect(result).toEqual([]) 
+    expect(result).toEqual([])
   })
 
   it('handle negative values for count', () => {
@@ -31,6 +33,6 @@ describe('getRandomNodes', () => {
 
     const result = getRandomNodes(nodes, -2)
 
-    expect(result.length).toBe(2) 
+    expect(result.length).toBe(2)
   })
 })

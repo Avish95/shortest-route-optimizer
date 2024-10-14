@@ -21,19 +21,19 @@
 import SelectBase from './SelectBase.vue'
 import IconCalculator from './icons/IconCalculator.vue'
 import { ref, reactive } from 'vue'
-import Path from '@/types/path'
-import Option from '@/types/selectOption'
+import type Path from '@/types/path'
+import type Option from '@/types/selectOption'
 
 const emits = defineEmits(['action', 'clear'])
 const nodes = ref<Option[]>([
-    { key: 1, label: 'A' },
-    { key: 2, label: 'B' },
-    { key: 3, label: 'C' },
-    { key: 4, label: 'D' },
-    { key: 5, label: 'E' },
-    { key: 6, label: 'F' },
-    { key: 7, label: 'G' },
-    { key: 8, label: 'H' },
+    { key: 'A', label: 'A' },
+    { key: 'B', label: 'B' },
+    { key: 'C', label: 'C' },
+    { key: 'D', label: 'D' },
+    { key: 'E', label: 'E' },
+    { key: 'F', label: 'F' },
+    { key: 'G', label: 'G' },
+    { key: 'H', label: 'H' },
 ])
 
 const userInput = reactive<Path>({

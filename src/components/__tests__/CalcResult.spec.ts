@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+
 import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
 import Result from '../CalcResult.vue'
-import type ResultType from '@/types/result' 
+import type ResultType from '@/types/result'
 describe('Result.vue', () => {
   it('renders correctly with given result data', () => {
     const resultData: ResultType = {
@@ -17,7 +20,6 @@ describe('Result.vue', () => {
       },
     })
 
-    // Check if the component is rendered with the correct data
     expect(wrapper.find('h3').text()).toBe('Result')
     expect(wrapper.find('.result_panel p:nth-of-type(1)').text()).toBe(
       'From Node Name = "A", To Node Name = "B": A,B,C',

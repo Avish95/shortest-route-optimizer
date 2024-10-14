@@ -23,9 +23,10 @@ import CalcResult from './CalcResult.vue'
 import type Result from '@/types/result'
 import IconLoading from './icons/IconLoading.vue'
 import { ShortestPath } from '@/services/calculator'
+import type Path from '@/types/path'
 import { ref } from 'vue'
 
-const handleAction = async (event) => {
+const handleAction = async (event: Path) => {
     loading.value = true
     ShortestPath(event).then((res) => {
         result.value = res
