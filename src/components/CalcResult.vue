@@ -2,8 +2,8 @@
     <div class="result_wrapper">
         <h3>Result</h3>
         <div class="result_panel">
-            <p>From Node Name = "{{ result.from }}", To Node Name = "{{ result.to }}": {{ result.path }}</p>
-            <p>Total Distance: {{ result.distance }}</p>
+            <p>From Node Name = "{{ props.result.from }}", To Node Name = "{{ props.result.to }}": {{ props.result.path }}</p>
+            <p>Total Distance: {{ props.result.distance }}</p>
         </div>
     </div>
 </template>
@@ -15,7 +15,7 @@ interface Props {
     result: Result
 }
 
-const { result } = defineProps<Props>()
+const props = defineProps<Props>()
 </script>
 
 <style scoped>

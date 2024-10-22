@@ -34,26 +34,30 @@ const nodes = ref<Option[]>([
     { key: 'F', label: 'F' },
     { key: 'G', label: 'G' },
     { key: 'H', label: 'H' },
+    { key: 'I', label: 'I' },
 ])
 
 const userInput = reactive<Path>({
     fromnode: '',
     tonode: '',
 })
-
-const validationErrors = reactive({
+interface FormValidation {
+    isFromInValid: bolean
+    isToInvalid: bolean
+}
+const validationErrors = reactive<FormValidation>({
     isFromInValid: false,
     isToInvalid: false
 
 })
-const handleClear = () => {
+const handleClear = (): void => {
     userInput.fromnode = ''
     userInput.tonode = ''
     validationErrors.isFromInValid = false
     validationErrors.isToInvalid = false
     emits('clear')
 }
-const handleValidation = () => {
+const handleValidation = (): void => {
     validationErrors.isFromInValid = false
     validationErrors.isToInvalid = false
 
@@ -68,7 +72,7 @@ const handleValidation = () => {
         validationErrors.isToInvalid = true
     }
 }
-const handleCalculator = () => {
+const handleCalculator = (): void => {
     handleValidation();
     if (!validationErrors.isFromInValid &&
         !validationErrors.isToInvalid) {
