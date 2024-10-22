@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > matches the snapshot 1`] = `
+"<header data-v-7a7a37b1="" class="header">
+  <div data-v-961aa8b9="" data-v-7a7a37b1="" class="heading_container">
+    <h1 data-v-961aa8b9="">Dijiktra’s Algorithm Calculator</h1>
+    <p data-v-961aa8b9="" class="hero_text">Discovering Optimal Routes Through Nodes Using Dijkstra's Method</p>
+  </div>
+</header>
+<main data-v-7a7a37b1="" class="main-centered">
+  <div data-v-d9381930="" data-v-7a7a37b1="" class="calc_wrapper">
+    <div data-v-d9381930="" class="">
+      <div data-v-f1588342="" data-v-d9381930="" class="Input_wrapper">
+        <h2 data-v-f1588342="">Select Path</h2>
+        <div data-v-204186c5="" data-v-f1588342="" class="select_wrapper"><label data-v-204186c5="" for="select_from">From Node</label><select data-v-204186c5="" name="select_from" id="select_from" class="">
+            <option data-v-204186c5="" disabled="" selected="" hidden="" value="">Select</option>
+            <option data-v-204186c5="" value="A">A</option>
+            <option data-v-204186c5="" value="B">B</option>
+            <option data-v-204186c5="" value="C">C</option>
+            <option data-v-204186c5="" value="D">D</option>
+            <option data-v-204186c5="" value="E">E</option>
+            <option data-v-204186c5="" value="F">F</option>
+            <option data-v-204186c5="" value="G">G</option>
+            <option data-v-204186c5="" value="H">H</option>
+            <option data-v-204186c5="" value="I">I</option>
+          </select>
+          <!--v-if-->
+        </div>
+        <div data-v-204186c5="" data-v-f1588342="" class="select_wrapper"><label data-v-204186c5="" for="select_from">To Node</label><select data-v-204186c5="" name="select_from" id="select_from" class="">
+            <option data-v-204186c5="" disabled="" selected="" hidden="" value="">Select</option>
+            <option data-v-204186c5="" value="A">A</option>
+            <option data-v-204186c5="" value="B">B</option>
+            <option data-v-204186c5="" value="C">C</option>
+            <option data-v-204186c5="" value="D">D</option>
+            <option data-v-204186c5="" value="E">E</option>
+            <option data-v-204186c5="" value="F">F</option>
+            <option data-v-204186c5="" value="G">G</option>
+            <option data-v-204186c5="" value="H">H</option>
+            <option data-v-204186c5="" value="I">I</option>
+          </select>
+          <!--v-if-->
+        </div>
+        <div data-v-f1588342="" class="buttons_wrapper"><button data-v-f1588342="" class="clear_btn">Clear</button><button data-v-f1588342="" class="primary_btn"> Calculate <i data-v-f1588342=""><svg data-v-f1588342="" width="14" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 17.333h10a1.666 1.666 0 0 0 1.667-1.666V2.333A1.667 1.667 0 0 0 12 .667H2A1.667 1.667 0 0 0 .333 2.333v13.334A1.666 1.666 0 0 0 2 17.333Zm2.5-2.5H2.833v-1.666H4.5v1.666Zm0-3.333H2.833V9.833H4.5V11.5Zm0-3.333H2.833V6.5H4.5v1.667Zm3.333 6.666H6.167v-1.666h1.666v1.666Zm0-3.333H6.167V9.833h1.666V11.5Zm0-3.333H6.167V6.5h1.666v1.667Zm3.334 6.666H9.5v-5h1.667v5Zm0-6.666H9.5V6.5h1.667v1.667ZM2 2.333h10v2.5H2v-2.5Z" fill="#fff"></path>
+              </svg></i></button></div>
+      </div>
+    </div>
+    <div data-v-d9381930="" class="image_wrapper"><img data-v-d9381930="" src="/src/assets/calcImage.png" alt="graphical image of a sitting man"></div>
+  </div>
+</main>"
+`;
