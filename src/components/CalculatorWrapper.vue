@@ -1,9 +1,9 @@
 <template>
-    <div class="loadingWraper" v-if="loading">
+    <div class="loadingWraper" v-show="loading">
         <IconLoading style="width: 5rem;" />
         <span class="loadingText">Calculating the Shortest Path...</span>
     </div>
-    <div v-else class="calc_wrapper">
+    <div v-show="loading === false" class="calc_wrapper">
         <div class="">
             <CalculatorInputs @action="handleAction" @clear="result = null" />
         </div>
@@ -75,6 +75,6 @@ const result = ref<Result | null>(null)
         flex-direction: column;
     }
 
-    
+
 }
 </style>

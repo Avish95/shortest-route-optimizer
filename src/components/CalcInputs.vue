@@ -42,8 +42,8 @@ const userInput = reactive<Path>({
     tonode: '',
 })
 interface FormValidation {
-    isFromInValid: bolean
-    isToInvalid: bolean
+    isFromInValid: boolean
+    isToInvalid: boolean
 }
 const validationErrors = reactive<FormValidation>({
     isFromInValid: false,
